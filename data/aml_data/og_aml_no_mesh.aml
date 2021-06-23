@@ -1,0 +1,507 @@
+<body R="1 0 0 0 1 0 0 0 1" com="0 0 0" custom_physics="" friction="1 1" inertia="5.88 5.88 5.88 0 0 0" inertia_frame="COM" mass="107.95" name="Body" r="0 0 0" restitution="0">
+  <render R="1 0 0 0 0 -1 0 1 0" name="OMNI.WRL" r="0 0 0">
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS205" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.7922 0.8196 0.9333" emissive="0 0 0" enabled="true" shininess="0.0738999992609024" specular="0.198 0.2049 0.2333" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS177" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS033" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS032" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS030" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS029" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS028" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS027" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS026" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS025" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS024" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS023" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS022" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS021" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS020" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS019" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS018" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS017" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS016" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS015" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS014" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS013" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS012" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS011" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="VIFS489" r="0 0.1069 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+    <child R="1 0 0 0 1 0 0 0 1" name="Box001" r="0 0.1806 0">
+      <shape>
+        <appearance>
+          <material ambient="1" diffuse="0.1961 0.1961 0.1961" emissive="0 0 0" enabled="true" shininess="0.287499994039536" specular="0.36 0.36 0.36" transparency="0"/>
+          <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+          <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+        </appearance>
+        <geometry approx="ASIS" type="MESH">
+        </geometry>
+      </shape>
+    </child>
+  </render>
+
+
+
+
+
+  <child>
+    <joint Rflat="1 0 0 0 -1 -3.67395e-016 0 3.67395e-016 -1" Rsharp="1 0 0 0 1 0 0 0 1" activated="true" coulomb="0 0 " custom_physics="" damping="0.1 " dof="1" limit="0 0 " name="C1" neutral="0 " parameters="" restitution="0 " rflat="0.215 0.125 0.1069" rsharp="0 0 0" stiction="0 0 " stiffness="0 " stribeck="0 0 " type="REVOLUTE"/>
+    <body R="1 0 0 0 1 0 0 0 1" com="0 0 0" custom_physics="" friction="0 0" inertia="0.002 0.002 0.002 0 0 0" inertia_frame="COM" mass="2" name="C1" r="0 0 0" restitution="0">
+
+      <render R="1 0 0 0 1 0 0 0 1" name="C1" r="0.0195 0.025 0">
+        <child R="-0.642843 0 0.765998 0.765998 0 0.642843 0 1 0" name="VIFS347" r="0.2145 -0.10935 9.17912e-010">
+          <shape>
+            <appearance>
+              <material ambient="1" diffuse="0.8353 0.8353 0.8353" emissive="0.08353 0.08353 0.08353" enabled="true" shininess="0.676999986171722" specular="0.468 0.468 0.468" transparency="0"/>
+              <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+              <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+            </appearance>
+            <geometry approx="ASIS" type="MESH">
+            </geometry>
+          </shape>
+        </child>
+      </render>
+
+      <child>
+        <joint Rflat="1 0 0 0 3.67395e-016 -1 0 1 3.67395e-016" Rsharp="1 0 0 0 0 1 0 -1 0" activated="true" coulomb="0 0 " custom_physics="" damping="0 " dof="1" limit="0 0 " name="W1" neutral="0 " parameters="" restitution="0 " rflat="-0.02 0 -0.052" rsharp="0 0 0" stiction="0 0 " stiffness="0 " stribeck="0 0 " type="REVOLUTE"/>
+
+        <body R="1 0 0 0 1 0 0 0 1" com="0 0 0" custom_physics="" friction="0.5 0.5" inertia="0.0005685 0.001089 0.0005685 0 0 0" inertia_frame="COM" mass="0.72" name="W1" r="0 0 0" restitution="0">
+          <render R="-0.642843 0 0.765998 0.765998 0 0.642843 0 1 0" name="VIFS337" r="0.254 -0.08435 0.052">
+            <shape>
+              <appearance>
+                <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+                <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+                <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+              </appearance>
+              <geometry approx="ASIS" type="MESH">
+              </geometry>
+            </shape>
+          </render>
+
+          <render R="-0.642843 0 0.765998 0.765998 0 0.642843 0 1 0" name="VIFS336" r="0.254 -0.08435 0.052">
+            <shape>
+              <appearance>
+                <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+                <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+                <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+              </appearance>
+              <geometry approx="ASIS" type="MESH">
+              </geometry>
+            </shape>
+          </render>
+
+          <collision R="1 0 0 0 0 -1 0 1 0" adjacent_collision="false" contact="RIGID" gap="0.005" haptic="true" name="W1_c" override="false" r="0 0 0">
+            <geometry approx="ASIS" type="CYLINDER">
+              <cylinder h="0.015" r="0.055"/>
+            </geometry>
+          </collision>
+
+        </body>
+      </child>
+
+    </body>
+  </child>
+
+
+
+
+
+  <child>
+    <joint Rflat="1 0 0 0 -1 -3.67395e-016 0 3.67395e-016 -1" Rsharp="1 0 0 0 1 0 0 0 1" activated="true" coulomb="0 0 " custom_physics="" damping="0.1 " dof="1" limit="0 0 " name="C2" neutral="0 " parameters="" restitution="0 " rflat="-0.215 0.125 0.1069" rsharp="0 0 0" stiction="0 0 " stiffness="0 " stribeck="0 0 " type="REVOLUTE"/>
+    <body R="1 0 0 0 1 0 0 0 1" com="0 0 0" custom_physics="" friction="0 0" inertia="0.002 0.002 0.002 0 0 0" inertia_frame="COM" mass="2" name="C2" r="0 0 0" restitution="0">
+      <render R="1 0 0 0 1 0 0 0 1" name="C2" r="-0.0635 0 0">
+        <child R="0.642761 0 -0.766067 -0.766067 0 -0.642761 0 1 0" name="VIFS064" r="0.29745 -0.085 9.17912e-010">
+          <shape>
+            <appearance>
+              <material ambient="1" diffuse="0.8353 0.8353 0.8353" emissive="0.08353 0.08353 0.08353" enabled="true" shininess="0.676999986171722" specular="0.468 0.468 0.468" transparency="0"/>
+              <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+              <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+            </appearance>
+            <geometry approx="ASIS" type="MESH">
+            </geometry>
+          </shape>
+        </child>
+      </render>
+      <child>
+        <joint Rflat="1 0 0 0 3.67395e-016 -1 0 1 3.67395e-016" Rsharp="1 0 0 0 0 1 0 -1 0" activated="true" coulomb="0 0 " custom_physics="" damping="0 " dof="1" limit="0 0 " name="W2" neutral="0 " parameters="" restitution="0 " rflat="-0.02 0 -0.052" rsharp="0 0 0" stiction="0 0 " stiffness="0 " stribeck="0 0 " type="REVOLUTE"/>
+        <body R="1 0 0 0 1 0 0 0 1" com="0 0 0" custom_physics="" friction="0.5 0.5" inertia="0.0005685 0.001089 0.0005685 0 0 0" inertia_frame="COM" mass="0.72" name="W2" r="0 0 0" restitution="0">
+          <render R="0.642761 0 -0.766067 -0.766067 0 -0.642761 0 1 0" name="VIFS054" r="0.25395 -0.085 0.052">
+            <shape>
+              <appearance>
+                <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+                <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+                <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+              </appearance>
+              <geometry approx="ASIS" type="MESH">
+              </geometry>
+            </shape>
+          </render>
+          <render R="0.642761 0 -0.766067 -0.766067 0 -0.642761 0 1 0" name="VIFS053" r="0.25395 -0.085 0.052">
+            <shape>
+              <appearance>
+                <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+                <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+                <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+              </appearance>
+              <geometry approx="ASIS" type="MESH">
+              </geometry>
+            </shape>
+          </render>
+          <collision R="1 0 0 0 0 -1 0 1 0" adjacent_collision="false" contact="RIGID" gap="0.005" haptic="true" name="W2_c" override="false" r="0 0 0">
+            <geometry approx="ASIS" type="CYLINDER">
+              <cylinder h="0.015" r="0.055"/>
+            </geometry>
+          </collision>
+        </body>
+      </child>
+    </body>
+  </child>
+  <child>
+    <joint Rflat="1 0 0 0 -1 -3.67395e-016 0 3.67395e-016 -1" Rsharp="1 0 0 0 1 0 0 0 1" activated="true" coulomb="0 0 " custom_physics="" damping="0.1 " dof="1" limit="0 0 " name="C3" neutral="0 " parameters="" restitution="0 " rflat="-0.215 -0.125 0.1069" rsharp="0 0 0" stiction="0 0 " stiffness="0 " stribeck="0 0 " type="REVOLUTE"/>
+    <body R="1 0 0 0 1 0 0 0 1" com="0 0 0" custom_physics="" friction="0 0" inertia="0.002 0.002 0.002 0 0 0" inertia_frame="COM" mass="2" name="C3" r="0 0 0" restitution="0">
+      <render R="1 0 0 0 1 0 0 0 1" name="C3" r="0.0195 -0.025 0">
+        <child R="-0.765867 0 -0.642999 -0.642999 0 0.765867 0 1 0" name="VIFS206" r="0.2256 0.06744 9.17912e-010">
+          <shape>
+            <appearance>
+              <material ambient="1" diffuse="0.8353 0.8353 0.8353" emissive="0.08353 0.08353 0.08353" enabled="true" shininess="0.676999986171722" specular="0.468 0.468 0.468" transparency="0"/>
+              <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+              <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+            </appearance>
+            <geometry approx="ASIS" type="MESH">
+            </geometry>
+          </shape>
+        </child>
+      </render>
+      <child>
+        <joint Rflat="1 0 0 0 3.67395e-016 -1 0 1 3.67395e-016" Rsharp="1 0 0 0 0 1 0 -1 0" activated="true" coulomb="0 0 " custom_physics="" damping="0 " dof="1" limit="0 0 " name="W3" neutral="0 " parameters="" restitution="0 " rflat="-0.02 0 -0.052" rsharp="0 0 0" stiction="0 0 " stiffness="0 " stribeck="0 0 " type="REVOLUTE"/>
+        <body R="1 0 0 0 1 0 0 0 1" com="0 0 0" custom_physics="" friction="0.5 0.5" inertia="0.0005685 0.001089 0.0005685 0 0 0" inertia_frame="COM" mass="0.72" name="W3" r="0 0 0" restitution="0">
+          <render R="-0.765867 0 -0.642999 -0.642999 0 0.765867 0 1 0" name="VIFS196" r="0.2651 0.04244 0.052">
+            <shape>
+              <appearance>
+                <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+                <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+                <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+              </appearance>
+              <geometry approx="ASIS" type="MESH">
+              </geometry>
+            </shape>
+          </render>
+          <render R="-0.765867 0 -0.642999 -0.642999 0 0.765867 0 1 0" name="VIFS195" r="0.2651 0.04244 0.052">
+            <shape>
+              <appearance>
+                <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+                <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+                <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+              </appearance>
+              <geometry approx="ASIS" type="MESH">
+              </geometry>
+            </shape>
+          </render>
+          <collision R="1 0 0 0 0 -1 0 1 0" adjacent_collision="false" contact="RIGID" gap="0.005" haptic="true" name="W3_c" override="false" r="0 0 0">
+            <geometry approx="ASIS" type="CYLINDER">
+              <cylinder h="0.015" r="0.055"/>
+            </geometry>
+          </collision>
+        </body>
+      </child>
+    </body>
+  </child>
+  <child>
+    <joint Rflat="1 0 0 0 -1 -3.6739e-016 0 3.6739e-016 -1" Rsharp="1 0 0 0 1 0 0 0 1" activated="true" coulomb="0 0 " custom_physics="" damping="0 " dof="1" limit="0 0 " name="C4" neutral="0 " parameters="" restitution="0 " rflat="0.215 -0.125 0.1069" rsharp="0 0 0" stiction="0 0 " stiffness="0 " stribeck="0 0 " type="REVOLUTE"/>
+    <body R="1 0 0 0 1 0 0 0 1" com="0 0 0" custom_physics="" friction="0 0" inertia="0.002 0.002 0.002 0 0 0" inertia_frame="COM" mass="2" name="C4" r="0 0 0" restitution="0">
+      <render R="1 0 0 0 1 0 0 0 1" name="C4" r="0.0195 -0.025 0">
+        <child R="-0.765867 0 -0.642999 -0.642999 0 0.765867 0 1 0" name="VIFS206 1" r="0.2256 0.06744 9.17912e-010">
+          <shape>
+            <appearance>
+              <material ambient="1" diffuse="0.8353 0.8353 0.8353" emissive="0.08353 0.08353 0.08353" enabled="true" shininess="0.676999986171722" specular="0.468 0.468 0.468" transparency="0"/>
+              <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+              <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+            </appearance>
+            <geometry approx="ASIS" type="MESH">
+            </geometry>
+          </shape>
+        </child>
+      </render>
+      <child>
+        <joint Rflat="1 0 0 0 3.6739e-016 -1 0 1 3.6739e-016" Rsharp="1 0 0 0 0 1 0 -1 0" activated="true" coulomb="0 0 " custom_physics="" damping="0 " dof="1" limit="0 0 " name="W4" neutral="0 " parameters="" restitution="0 " rflat="-0.02 0 -0.052" rsharp="0 0 0" stiction="0 0 " stiffness="0 " stribeck="0 0 " type="REVOLUTE"/>
+        <body R="1 0 0 0 1 0 0 0 1" com="0 0 0" custom_physics="" friction="0.5 0.5" inertia="0.0005685 0.001089 0.0005685 0 0 0" inertia_frame="COM" mass="0.72" name="W4" r="0 0 0" restitution="0">
+          <render R="-0.765867 0 -0.642999 -0.642999 0 0.765867 0 1 0" name="VIFS196 1" r="0.2651 0.04244 0.052">
+            <shape>
+              <appearance>
+                <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+                <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+                <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+              </appearance>
+              <geometry approx="ASIS" type="MESH">
+              </geometry>
+            </shape>
+          </render>
+          <render R="-0.765867 0 -0.642999 -0.642999 0 0.765867 0 1 0" name="VIFS195 1" r="0.2651 0.04244 0.052">
+            <shape>
+              <appearance>
+                <material ambient="1" diffuse="0.1765 0.1765 0.1765" emissive="0 0 0" enabled="true" shininess="0.572499990463257" specular="0.738 0.738 0.738" transparency="0"/>
+                <texture image="" lightmap="" normalmap="" repeatS="false" repeatT="false" specularmap=""/>
+                <textransform center="0 0" rotation="0" scale="1 1" translation="0 0"/>
+              </appearance>
+              <geometry approx="ASIS" type="MESH">
+              </geometry>
+            </shape>
+          </render>
+          <collision R="1 0 0 0 0 -1 0 1 0" adjacent_collision="false" contact="RIGID" gap="0.005" haptic="true" name="W4_c" override="false" r="0 0 0">
+            <geometry approx="ASIS" type="CYLINDER">
+              <cylinder h="0.015" r="0.055"/>
+            </geometry>
+          </collision>
+        </body>
+      </child>
+    </body>
+  </child>
+</body>

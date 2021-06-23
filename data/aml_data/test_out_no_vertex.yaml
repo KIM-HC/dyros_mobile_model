@@ -1,0 +1,561 @@
+Subsys: 
+  body: 
+    name: Body
+    renders: 
+      - 
+        r: [0.0, 0.0, 0.0]
+        R: [1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 1.0, 0.0]
+        name: OMNI.WRL
+        childs: 
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS205
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS177
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS033
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS032
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS030
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS029
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS028
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS027
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS026
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS025
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS024
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS023
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS022
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS021
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS020
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS019
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS018
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS017
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS016
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS015
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS014
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS013
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS012
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS011
+          - 
+            shape: 
+              appearance: 
+                textransform: 
+                  rotation: 0.0
+                  scale: [1.0, 1.0]
+                  translation: [0.0, 0.0]
+                  center: [0.0, 0.0]
+            r: [0.0, 0.1069, 0.0]
+            R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+            name: VIFS489
+
+    r: [0.0, 0.0, 0.0]
+    com: ['0', '0', '0']
+    inertia: ['5.88', '5.88', '5.88', '0', '0', '0']
+    friction: ['1', '1']
+    R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+    mass: 107.95
+    inertia_frame: COM
+
+    childs: 
+      - 
+        body: 
+          name: C1
+          renders: 
+            - 
+              r: [0.0195, 0.025, 0.0]
+              R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+              name: C1
+              childs: 
+                - 
+                  r: [0.2145, -0.10935, 9.17912e-10]
+                  R: [-0.642843, 0.0, 0.765998, 0.765998, 0.0, 0.642843, 0.0, 1.0, 0.0]
+                  name: VIFS347
+          friction: ['0', '0']
+          R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+          mass: 2
+          inertia_frame: COM
+          childs: 
+            - 
+              body: 
+                name: W1
+                renders: 
+                  - 
+                    r: [0.254, -0.08435, 0.052]
+                    R: [-0.642843, 0.0, 0.765998, 0.765998, 0.0, 0.642843, 0.0, 1.0, 0.0]
+                    name: VIFS337
+                  - 
+                    r: [0.254, -0.08435, 0.052]
+                    R: [-0.642843, 0.0, 0.765998, 0.765998, 0.0, 0.642843, 0.0, 1.0, 0.0]
+                    name: VIFS336
+                friction: ['0.5', '0.5']
+                collision: 
+                  name: W1_c
+                  geometry: 
+                    approx: ASIS
+                    type: CYLINDER
+                    cylinder: 
+                      h: 0.015
+                      r: 0.055
+                  gap: 0.005
+                  R: [1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 1.0, 0.0]
+                  contact: RIGID
+                  haptic: true
+                  override: false
+                  adjacent_collision: false
+                  r: [0.0, 0.0, 0.0]
+                R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+                mass: 0.72
+                inertia_frame: COM
+                r: [0.0, 0.0, 0.0]
+                com: ['0', '0', '0']
+                inertia: ['0.0005685', '0.001089', '0.0005685', '0', '0', '0']
+              joint: 
+                rflat: ['-0.02', '0', '-0.052']
+                name: W1
+                Rflat: ['1', '0', '0', '0', '3.67395e-016', '-1', '0', '1', '3.67395e-016']
+                Rsharp: ['1', '0', '0', '0', '0', '1', '0', '-1', '0']
+          r: [0.0, 0.0, 0.0]
+          com: ['0', '0', '0']
+          inertia: ['0.002', '0.002', '0.002', '0', '0', '0']
+        joint: 
+          rflat: ['0.215', '0.125', '0.1069']
+          name: C1
+          Rflat: ['1', '0', '0', '0', '-1', '-3.67395e-016', '0', '3.67395e-016', '-1']
+          Rsharp: ['1', '0', '0', '0', '1', '0', '0', '0', '1']
+
+
+
+      - 
+        body: 
+          name: C2
+          renders: 
+            - 
+              r: [-0.0635, 0.0, 0.0]
+              R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+              name: C2
+              childs: 
+                - 
+                  r: [0.29745, -0.085, 9.17912e-10]
+                  R: [0.642761, 0.0, -0.766067, -0.766067, 0.0, -0.642761, 0.0, 1.0, 0.0]
+                  name: VIFS064
+          friction: ['0', '0']
+          R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+          mass: 2
+          inertia_frame: COM
+          childs: 
+            - 
+              body: 
+                name: W2
+                renders: 
+                  - 
+                    r: [0.25395, -0.085, 0.052]
+                    R: [0.642761, 0.0, -0.766067, -0.766067, 0.0, -0.642761, 0.0, 1.0, 0.0]
+                    name: VIFS054
+                  - 
+                    r: [0.25395, -0.085, 0.052]
+                    R: [0.642761, 0.0, -0.766067, -0.766067, 0.0, -0.642761, 0.0, 1.0, 0.0]
+                    name: VIFS053
+                friction: ['0.5', '0.5']
+                collision: 
+                  name: W2_c
+                  geometry: 
+                    approx: ASIS
+                    type: CYLINDER
+                    cylinder: 
+                      h: 0.015
+                      r: 0.055
+                  gap: 0.005
+                  R: [1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 1.0, 0.0]
+                  contact: RIGID
+                  haptic: true
+                  override: false
+                  adjacent_collision: false
+                  r: [0.0, 0.0, 0.0]
+                R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+                mass: 0.72
+                inertia_frame: COM
+                r: [0.0, 0.0, 0.0]
+                com: ['0', '0', '0']
+                inertia: ['0.0005685', '0.001089', '0.0005685', '0', '0', '0']
+              joint: 
+                rflat: ['-0.02', '0', '-0.052']
+                name: W2
+                Rflat: ['1', '0', '0', '0', '3.67395e-016', '-1', '0', '1', '3.67395e-016']
+                Rsharp: ['1', '0', '0', '0', '0', '1', '0', '-1', '0']
+          r: [0.0, 0.0, 0.0]
+          com: ['0', '0', '0']
+          inertia: ['0.002', '0.002', '0.002', '0', '0', '0']
+        joint: 
+          rflat: ['-0.215', '0.125', '0.1069']
+          name: C2
+          Rflat: ['1', '0', '0', '0', '-1', '-3.67395e-016', '0', '3.67395e-016', '-1']
+          Rsharp: ['1', '0', '0', '0', '1', '0', '0', '0', '1']
+
+
+
+      - 
+        body: 
+          name: C3
+          renders: 
+            - 
+              r: [0.0195, -0.025, 0.0]
+              R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+              name: C3
+              childs: 
+                - 
+                  r: [0.2256, 0.06744, 9.17912e-10]
+                  R: [-0.765867, 0.0, -0.642999, -0.642999, 0.0, 0.765867, 0.0, 1.0, 0.0]
+                  name: VIFS206
+          friction: ['0', '0']
+          R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+          mass: 2
+          inertia_frame: COM
+          childs: 
+            - 
+              body: 
+                name: W3
+                renders: 
+                  - 
+                    r: [0.2651, 0.04244, 0.052]
+                    R: [-0.765867, 0.0, -0.642999, -0.642999, 0.0, 0.765867, 0.0, 1.0, 0.0]
+                    name: VIFS196
+                  - 
+                    r: [0.2651, 0.04244, 0.052]
+                    R: [-0.765867, 0.0, -0.642999, -0.642999, 0.0, 0.765867, 0.0, 1.0, 0.0]
+                    name: VIFS195
+                friction: ['0.5', '0.5']
+                collision: 
+                  name: W3_c
+                  geometry: 
+                    approx: ASIS
+                    type: CYLINDER
+                    cylinder: 
+                      h: 0.015
+                      r: 0.055
+                  gap: 0.005
+                  R: [1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 1.0, 0.0]
+                  contact: RIGID
+                  haptic: true
+                  override: false
+                  adjacent_collision: false
+                  r: [0.0, 0.0, 0.0]
+                R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+                mass: 0.72
+                inertia_frame: COM
+                r: [0.0, 0.0, 0.0]
+                com: ['0', '0', '0']
+                inertia: ['0.0005685', '0.001089', '0.0005685', '0', '0', '0']
+              joint: 
+                rflat: ['-0.02', '0', '-0.052']
+                name: W3
+                Rflat: ['1', '0', '0', '0', '3.67395e-016', '-1', '0', '1', '3.67395e-016']
+                Rsharp: ['1', '0', '0', '0', '0', '1', '0', '-1', '0']
+          r: [0.0, 0.0, 0.0]
+          com: ['0', '0', '0']
+          inertia: ['0.002', '0.002', '0.002', '0', '0', '0']
+        joint: 
+          rflat: ['-0.215', '-0.125', '0.1069']
+          name: C3
+          Rflat: ['1', '0', '0', '0', '-1', '-3.67395e-016', '0', '3.67395e-016', '-1']
+          Rsharp: ['1', '0', '0', '0', '1', '0', '0', '0', '1']
+
+      - 
+        body: 
+          name: C4
+          renders: 
+            - 
+              r: [0.0195, -0.025, 0.0]
+              R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+              name: C4
+              childs: 
+                - 
+                  r: [0.2256, 0.06744, 9.17912e-10]
+                  R: [-0.765867, 0.0, -0.642999, -0.642999, 0.0, 0.765867, 0.0, 1.0, 0.0]
+                  name: VIFS206_1
+          friction: ['0', '0']
+          R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+          mass: 2
+          inertia_frame: COM
+          childs: 
+            - 
+              body: 
+                name: W4
+                renders: 
+                  - 
+                    r: [0.2651, 0.04244, 0.052]
+                    R: [-0.765867, 0.0, -0.642999, -0.642999, 0.0, 0.765867, 0.0, 1.0, 0.0]
+                    name: VIFS196_1
+                  - 
+                    r: [0.2651, 0.04244, 0.052]
+                    R: [-0.765867, 0.0, -0.642999, -0.642999, 0.0, 0.765867, 0.0, 1.0, 0.0]
+                    name: VIFS195_1
+                friction: ['0.5', '0.5']
+                collision: 
+                  name: W4_c
+                  geometry: 
+                    approx: ASIS
+                    type: CYLINDER
+                    cylinder: 
+                      h: 0.015
+                      r: 0.055
+                  gap: 0.005
+                  R: [1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 1.0, 0.0]
+                  contact: RIGID
+                  haptic: true
+                  override: false
+                  adjacent_collision: false
+                  r: [0.0, 0.0, 0.0]
+                R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+                mass: 0.72
+                inertia_frame: COM
+                r: [0.0, 0.0, 0.0]
+                com: ['0', '0', '0']
+                inertia: ['0.0005685', '0.001089', '0.0005685', '0', '0', '0']
+              joint: 
+                rflat: ['-0.02', '0', '-0.052']
+                name: W4
+                Rflat: ['1', '0', '0', '0', '3.6739e-016', '-1', '0', '1', '3.6739e-016']
+                Rsharp: ['1', '0', '0', '0', '0', '1', '0', '-1', '0']
+          r: [0.0, 0.0, 0.0]
+          com: ['0', '0', '0']
+          inertia: ['0.002', '0.002', '0.002', '0', '0', '0']
+        joint: 
+          rflat: ['0.215', '-0.125', '0.1069']
+          name: C4
+          Rflat: ['1', '0', '0', '0', '-1', '-3.6739e-016', '0', '3.6739e-016', '-1']
+          Rsharp: ['1', '0', '0', '0', '1', '0', '0', '0', '1']

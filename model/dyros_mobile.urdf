@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="dyros_mobile">
+
+  <material name="black">
+    <color rgba="0.1 0.1 0.1 1"/>
+  </material>
+
+  <material name="silver">
+    <color rgba="0.8 0.8 0.8 1"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/body_bottom.stl"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/body_side.stl"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/body_top.stl"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.12" rpy="0 0 0"/>
+      <geometry>
+        <box size="${0.65 + 0.02} ${0.45 + 0.02} ${0.24 + 0.02}" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="107.95"/>
+      <inertia ixx="5.88" ixy="0.0" ixz="0.0" iyy="5.88" iyz="0.0" izz="5.88"/>
+    </inertial>
+  </link>
+
+<!-- ================================================================================================================= -->
+<!-- ================================================================================================================= -->
+
+  <link name="front_left_steer">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/wheel_body.stl"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.03" radius="0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.0"/>
+      <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002"/>
+    </inertial>
+  </link>
+
+  <joint name="front_left_steer_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="front_left_steer"/>
+    <origin xyz="0.215 0.125 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000000" velocity="1000000"/>
+    <!-- <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/> -->
+  </joint>
+
+  <link name="front_left_rotate">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="-${pi/2} 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/wheel_rotate.stl"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.015" radius="0.055"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.72"/>
+      <inertia ixx="0.0005685" ixy="0.0" ixz="0.0" iyy="0.001089" iyz="0.0" izz="0.0005685"/>
+    </inertial>
+  </link>
+  <joint name="front_left_rotate_link" type="continuous">
+    <parent link="front_left_steer"/>
+    <child link="front_left_rotate"/>
+    <origin xyz="-0.02 0 -0.052" rpy="${pi/2} 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000000" velocity="1000000"/>
+    <!-- <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/> -->
+  </joint>
+
+<!-- ================================================================================================================= -->
+<!-- ================================================================================================================= -->
+
+  <link name="rear_left_steer">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/wheel_body.stl"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.03" radius="0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.0"/>
+      <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002"/>
+    </inertial>
+  </link>
+
+  <joint name="rear_left_steer_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rear_left_steer"/>
+    <origin xyz="-0.215 0.125  0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000000" velocity="1000000"/>
+    <!-- <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/> -->
+  </joint>
+
+  <link name="rear_left_rotate">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="-${pi/2} 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/wheel_rotate.stl"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.015" radius="0.055"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.72"/>
+      <inertia ixx="0.0005685" ixy="0.0" ixz="0.0" iyy="0.001089" iyz="0.0" izz="0.0005685"/>
+    </inertial>
+  </link>
+
+  <joint name="rear_left_rotate_joint" type="continuous">
+    <parent link="rear_left_steer"/>
+    <child link="rear_left_rotate"/>
+    <origin xyz="-0.02 0 -0.052" rpy="${pi/2} 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000000" velocity="1000000"/>
+    <!-- <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/> -->
+  </joint>
+
+<!-- ================================================================================================================= -->
+<!-- ================================================================================================================= -->
+
+  <link name="rear_right_steer">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/wheel_body.stl"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.03" radius="0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.0"/>
+      <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002"/>
+    </inertial>
+  </link>
+
+  <joint name="rear_right_steer_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rear_right_steer"/>
+    <origin xyz="-0.215 -0.125  0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000000" velocity="1000000"/>
+    <!-- <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/> -->
+  </joint>
+
+  <link name="rear_right_rotate">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="-${pi/2} 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/wheel_rotate.stl"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.015" radius="0.055"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.72"/>
+      <inertia ixx="0.0005685" ixy="0.0" ixz="0.0" iyy="0.001089" iyz="0.0" izz="0.0005685"/>
+    </inertial>
+  </link>
+
+  <joint name="rear_right_rotate_joint" type="continuous">
+    <parent link="rear_right_steer"/>
+    <child link="rear_right_rotate"/>
+    <origin xyz="-0.02 0 -0.052" rpy="${pi/2} 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000000" velocity="1000000"/>
+    <!-- <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/> -->
+  </joint>
+
+<!-- ================================================================================================================= -->
+<!-- ================================================================================================================= -->
+
+  <link name="front_right_steer">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/wheel_body.stl"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.03" radius="0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.0"/>
+      <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.002" iyz="0.0" izz="0.002"/>
+    </inertial>
+  </link>
+
+  <joint name="front_right_steer_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="front_right_steer"/>
+    <origin xyz="0.215 -0.125  0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000000" velocity="1000000"/>
+    <!-- <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/> -->
+  </joint>
+
+  <link name="front_right_rotate">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="-${pi/2} 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/wheel_rotate.stl"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.015" radius="0.055"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.72"/>
+      <inertia ixx="0.0005685" ixy="0.0" ixz="0.0" iyy="0.001089" iyz="0.0" izz="0.0005685"/>
+    </inertial>
+  </link>
+
+  <joint name="front_right_rotate_joint" type="continuous">
+    <parent link="front_right_steer"/>
+    <child link="front_right_rotate"/>
+    <origin xyz="-0.02 0 -0.052" rpy="${pi/2} 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000000" velocity="1000000"/>
+    <!-- <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/> -->
+  </joint>
+
+</robot>

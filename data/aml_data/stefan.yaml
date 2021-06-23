@@ -1,0 +1,298 @@
+ikea_stefan_side_left:
+    class_id: 1
+    type: furniture_part
+    quantity: 1
+    model_file: ikea_stefan_side_left.stl
+    tf_visible: true
+    # same side first
+    assembly_points: # wrt base frame 
+        # coordinates of pin holes
+        # [ 0, 0, -0.0626337, 0.9980366 ]
+      - [[0.453, 0.875, -0.05], [ 0, 0, 0.6376, 0.7703 ]]
+      - [[0.447, 0.841, -0.05], [ 0, 0, 0.6376, 0.7703 ]]
+      # - [[0.395, 0.569, -0.05],  [ 0, 0, -0.0938911, 0.9955825 ]] #original 2
+      - [[0.389, 0.575, -0.05],  [ 0, 0, 0.6376, 0.7703 ]] #modified 2
+      # - [[0.400, 0.576, -0.05],  [ 0, 0, 0.6376, 0.7703 ]] #modified 3
+         
+      - [[0.366624, 0.413727, -0.05], [ 0, 0, -0.7071068, 0.7071068 ]]
+      - [[0.365672, 0.380741, -0.05], [ 0, 0, -0.7071068, 0.7071068 ]]      
+
+      - [[0.0, 0.4265, -0.01535], [ 0, 0, -0.7071068, 0.7071068 ]]
+      - [[0.0, 0.3945, -0.01535], [ 0, 0, -0.7071068, 0.7071068 ]]  
+      
+        # coordinate of bolt holes        
+      - [[0.45, 0.858, -0.05], [ 0, 0, -0.0938911, 0.9955825 ]]
+      # - [[0.370, 0.40050, -0.05], [0, 0, 0, 1]] ##num8
+      - [[0.365, 0.39050, -0.05], [0, 0, 0, 1]] ##num8      
+      - [[0.006, 0.41250, -0.01535], [ 0, 0, 0.0, 0.1 ]] ##num9
+      # - [[0.0, 0.41050, -0.01535], [ 0, 0, -0.7071068, 0.7071068 ]]
+
+      # - [[0.000, 0, -0.37], [ 0, 0, -0.0174524, 0.9998477 ]]
+      - [[-0.00, 0, -0.37], [ 0, 0, -0.0, 1.0 ]]
+
+    graspable_points: ikea_stefan_side_left_grasp.yaml
+    graspable_lines: ikea_stefan_side_left_cont_grasp.yaml
+
+ikea_stefan_side_right:
+    class_id: 2
+    type: furniture_part
+    quantity: 1
+    model_file: ikea_stefan_side_right.stl
+    tf_visible: true
+    assembly_points:
+        # coordinates of pin holes
+      - [[0.453, 0.875, 0.05], [ -0.7703, -0.6376, 0, 0 ]]
+      - [[0.447, 0.841, 0.05], [ -0.7703, -0.6376, 0, 0 ]]
+      - [[0.395, 0.569, 0.05], [ -0.7703, -0.6376, 0, 0 ]]
+      
+
+      - [[0.366624, 0.413727, 0.05], [1, 0, 0, 0]]
+      - [[0.365672, 0.380741, 0.05], [1, 0, 0, 0]]
+      
+      - [[0.0, 0.4265, 0.01535], [1, 0, 0, 0]]
+      - [[0.0, 0.3945, 0.01535], [1, 0, 0, 0]]
+      
+        # coordinate of bolt holes which are MODIFIED!!!
+      - [[0.45, 0.858, 0.05], [ 0, 0, 0.6613119, 0.7501111 ]]
+      - [[0.366548, 0.397227, 0.05], [ 0, 0, -0.707107, 0.707107 ]] # for panda_right bolting
+      - [[-0.000, 0.40050, 0.01535], [ 1, 0, 0.0, 0.0 ]]
+      
+      # - [[0.445, 0.853, 0.05], [ 0, 0, 0.6613119, 0.7501111 ]]
+      # - [[0.366548, 0.397227, 0.05], [ 0, 0, -0.707107, 0.707107 ]] # for panda_right bolting
+      # - [[0.0, 0.41050, -0.01535], [ 0, 0, -0.707107, 0.707107 ]]
+      - [[0, 0, 0 ], [1, 0, 0, 0]]
+    graspable_points: ikea_stefan_side_right_grasp.yaml
+    graspable_lines: ikea_stefan_side_right_cont_grasp.yaml
+         
+ikea_stefan_long:
+    class_id: 3
+    type: furniture_part
+    quantity: 1
+    model_file: ikea_stefan_long.stl
+    tf_visible: true
+    assembly_points:
+        #coordinates of pin holes
+      # - [[0.17, 0.016, 0.01], [ 0, -0.7071068, 0, 0.7071068 ]]
+      # - [[0.17, -0.016, 0.01], [ 0, -0.7071068, 0, 0.7071068 ]]
+      # - [[-0.17, 0.016, 0.01], [ 0.7071068, 0, 0.7071068, 0 ]]
+      # - [[-0.17, -0.016, 0.01], [ 0.7071068, 0, 0.7071068, 0 ]]
+      - [[0.17, 0.016, 0.01], [ -0.5, -0.5, 0.5, 0.5 ]]      
+      - [[0.17, -0.016, 0.01], [ -0.5, -0.5, 0.5, 0.5 ]]
+      - [[-0.17, 0.016, 0.01], [ 0.5, -0.5, 0.5, -0.5 ]]
+      - [[-0.17, -0.016, 0.01], [ 0.5, -0.5, 0.5, -0.5 ]]
+      
+        #coordinates of bracket holes
+      # - [[0.112, -0.014, 0.02], [ -0.7071068, 0.7071068, 0, 0 ]] # 4
+      - [[0.117, -0.011, 0.02], [ -0.7071068, 0.7071068, 0, 0 ]] # 4
+      # - [[-0.112, -0.014, 0.02], [ -0.7071068, 0.7071068, 0, 0 ]] # 5
+      - [[-0.112, -0.011, 0.02], [ -0.7071068, 0.7071068, 0, 0 ]] # 5
+
+        #coordinates of bolt holes
+      - [[0.17, 0.0, 0.01], [ 0, -0.7071068, 0, 0.7071068 ]] #edit!! [-0.5, -0.5, 0.5, 0.5]
+      # - [[-0.17, 0.0, 0.01], [ -0.7071068, 0, -0.7071068, 0 ]] #edit!! [-0.5, -0.5, 0.5, 0.5]
+      # - [[-0.17, 0.0, 0.01], [ -0.7071068, 0, -0.7071068, 0 ]] # which one is right????
+      - [[-0.17, 0.0, 0.01], [-0.7070, 0.0123,  -0.7070, 0.0123]] #edit!! [-0.5, -0.5, 0.5, 0.5]
+
+    
+    graspable_points: ikea_stefan_long_grasp.yaml
+    graspable_lines: ikea_stefan_long_cont_grasp.yaml
+    surface_center: ikea_stefan_long_assemble_surface.yaml
+         
+ikea_stefan_short:
+    class_id: 4
+    type: furniture_part
+    quantity: 1
+    model_file: ikea_stefan_short.stl
+    tf_visible: true
+    assembly_points:
+        # coordinates of pin holes
+      # - [[0.135, 0.016, 0.01], [ -0.7071068, 0, 0.7071068, 0 ]]
+      # - [[0.135, -0.016, 0.01], [ -0.7071068, 0, 0.7071068, 0 ]]
+      # - [[-0.135, 0.016, 0.01], [ 0, 0.7071068, 0, 0.7071068 ]]
+      # - [[-0.135, -0.016, 0.01], [ 0, 0.7071068, 0, 0.7071068 ]]
+      - [[0.135, 0.016, 0.01], [ -0.5, -0.5, 0.5, 0.5 ]]                
+      - [[0.135, -0.016, 0.01], [ -0.5, -0.5, 0.5, 0.5 ]]                  
+      - [[-0.135, 0.016, 0.01], [ 0.5, -0.5, 0.5, -0.5 ]]            
+      - [[-0.135, -0.016, 0.01], [ 0.5, -0.5, 0.5, -0.5 ]]
+      
+      
+
+        # coordinates of bracket holes
+      # - [[0.08, -0.014, 0.02], [ -0.7071068, 0.7071068, 0, 0 ]] # 4
+      - [[0.083, -0.011, 0.02], [ -0.7071068, 0.7071068, 0, 0 ]] # 4
+      # - [[-0.08, -0.014, 0.02], [ -0.7071068, 0.7071068, 0, 0 ]] # 5
+      - [[-0.08, -0.014, 0.02], [ -0.7071068, 0.7071068, 0, 0 ]] # 5
+
+        # coordinates of bolt holes
+      - [[0.135, 0.0, 0.01], [ 0, -0.7071068, 0, 0.7071068 ]]
+      - [[-0.135, 0.0, 0.01], [ 0, 0.7071068, 0, 0.7071068 ]]
+
+      # ADD by HS, to test GMM algorithm
+      # - [[0.135, 0.0210000000000000, 0.0100000000000000], [ -0.5, -0.5, 0.5, 0.5 ]]                
+      # - [[0.135, 0.0200450849718747, 0.0129389262614624], [ -0.5, -0.5, 0.5, 0.5 ]]                
+      # - [[0.135, 0.0175450849718747, 0.0147552825814758], [ -0.5, -0.5, 0.5, 0.5 ]]                
+      # - [[0.135, 0.0144549150281253, 0.0147552825814758], [ -0.5, -0.5, 0.5, 0.5 ]] # 성공 가능 pressing force만 좀 더 키운다면                            
+      # - [[0.135, 0.0119549150281253, 0.0129389262614624], [ -0.5, -0.5, 0.5, 0.5 ]]   
+      # - [[0.135, 0.0110000000000000, 0.0100000000000000], [ -0.5, -0.5, 0.5, 0.5 ]] # 성공 가능 pressing force만 좀 더 키운다면                                           
+      # - [[0.135, 0.0119549150281253, 0.00706107373853764], [ -0.5, -0.5, 0.5, 0.5 ]]                
+      # - [[0.135, 0.0144549150281253, 0.00524471741852423], [ -0.5, -0.5, 0.5, 0.5 ]]                
+      # - [[0.135, 0.0175450849718747, 0.00524471741852423], [ -0.5, -0.5, 0.5, 0.5 ]]                
+      # - [[0.135, 0.0200450849718747, 0.00706107373853763], [ -0.5, -0.5, 0.5, 0.5 ]]                
+
+    graspable_points: ikea_stefan_short_grasp.yaml
+    graspable_lines: ikea_stefan_short_cont_grasp.yaml
+    surface_center: ikea_stefan_short_assemble_surface.yaml
+
+ikea_stefan_middle:
+     class_id: 5
+     type: furniture_part
+     quantity: 1
+     model_file: ikea_stefan_middle.stl
+     tf_visible: true
+     assembly_points:
+      #  - [[0.135, 0.016, 0.01], [ -0.5, -0.5, 0.5, 0.5 ]] #1116
+      #  - [[0.135, -0.016, 0.01], [ -0.5, -0.5, 0.5, 0.5 ]] #1116
+      #  - [[0.135, -0.295, 0.0055], [  -0.5, -0.5, 0.5, 0.5 ]]      
+      #  - [[-0.135, 0.015, 0.01], [0.5, 0.5, 0.5, 0.5]] # index3
+      #  - [[-0.135, -0.016, 0.01], [0.5, 0.5, 0.5, 0.5]]
+      #  - [[-0.135, -0.295, 0.0055], [0.5, 0.5, 0.5, 0.5]]      
+
+         # HC Tuned
+       - [[0.135, 0.016, 0.01], [ -0.5, -0.5, 0.5, 0.5 ]]
+       - [[0.135, -0.016, 0.01], [ -0.5, -0.5, 0.5, 0.5 ]]
+       - [[0.135, -0.297, 0.0060], [  -0.5, -0.5, 0.5, 0.5 ]]      
+       - [[-0.135, 0.012, 0.013], [0.5, 0.5, 0.5, 0.5]] # 210227
+       - [[-0.135, -0.02, 0.013], [0.5, 0.5, 0.5, 0.5]] # 210227
+       - [[-0.135, -0.3, 0.0055], [0.5, 0.5, 0.5, 0.5]]      
+
+         # point to mate a zig
+       - [[0.135, -0.31, -0.005], [0, 0, 0, 1]]
+
+     graspable_points: ikea_stefan_middle_grasp.yaml
+     graspable_lines: ikea_stefan_middle_cont_grasp.yaml
+     surface_center: ikea_stefan_middle_assemble_surface.yaml
+         
+ikea_stefan_bottom:
+    class_id: 6
+    type: furniture_part
+    quantity: 1
+    model_file: ikea_stefan_bottom.stl
+    tf_visible: true
+    assembly_points:
+        # coordinates of pin holes
+      - [[0, 0.205, 0], [ 0.7071068, 0, 0, 0.7071068]]
+      
+        # point to mate a zig
+      - [[-0.134, 0.205, 0.01], [0, 0, 0, 1]]
+      
+    graspable_points: ikea_stefan_bottom_grasp.yaml
+    graspable_lines: ikea_stefan_bottom_cont_grasp.yaml
+
+ikea_stefan_without_bottom:
+    class_id: 7
+    type: furniture_part
+    quantity: 1
+    model_file: ikea_stefan_without_bottom.stl
+    tf_visible: true
+    assembly_points:      
+      # coordinate of bolt holes        
+      # - [[0.445, 0.858, -0.01535], [ 0.9238795, -0.3826834, 0, 0 ]]   # [-0.3827, 0.9239, 0, 0])
+      - [[0.433, 0.877, -0.01535], [ 0.9238795, -0.3826834, 0, 0 ]]   # [-0.3827, 0.9239, 0, 0])
+      # - [[0.362, 0.40450, -0.01535], [ 0.3826834, 0.9238795, 0, 0 ]] ##num8   backup [[0.366548, 0.397227, -0.01535], [ 0.3826834, 0.9238795, 0, 0 ]] ##num8
+      - [[0.365, 0.37750, -0.01535], [ 0.7071068, 0.7071068, 0, 0 ]]  #362
+      
+      # - [[0.0, 0.41050, 0.01535], [ 0.7071068, 0.7071068, 0, 0 ] ] #[ 0, 0, 0.9238795, 0.3826834 ] ] #[ 0, 0, 0.0, 0.1 ]]
+      - [[-0.007, 0.390, 0.028], [ 0.9238795, 0.3826834, 0, 0 ]]
+
+      # bolt hole on the side_right
+      # TODO : change the position along z-axis
+      # - [[0.45, 0.858, -0.35], [ 0, 0, 0.6613119, 0.7501111 ]] # original value      
+      - [[0.445, 0.843, -0.35], [ 0, 0, 0.6613119, 0.7501111 ]]           
+      - [[0.365, 0.41050, -0.35], [ 0, 0, 0.819152, 0.5735764 ]] # for panda_right bolting
+      
+      # - [[0.370, 0.40050, -0.35], [ 0, 0, 0.9239, 0.3827 ]] # for panda_right bolting
+      # - [[-0.000, 0.41050, -0.38535], [ 0, 0, 0.3826834, 0.9238795 ]]
+      - [[-0.000, 0.41050, -0.38535], [ 0, 0, 0.3826834, 0.9238795 ]]
+      
+      
+      - [[0.3439, 0.4236, -0.2805], [ 0, 0.7071068, 0.7071068, 0 ]]
+      - [[0.3439, 0.4236, -0.1190], [ 0, 0.7071068, 0.7071068, 0 ]]
+      # - [[0.0171, 0.4254, -0.0858], [ -0.7071068, 0, 0, 0.7071068 ]]
+      # - [[0.0171, 0.4254, -0.3119], [ -0.7071068, 0, 0, 0.7071068 ]]
+      - [[0.03, 0.4254, -0.0865], [ -0.7071068, 0, 0, 0.7071068 ]]
+      # - [[0.03, 0.4254, -0.3102], [ -0.7071068, 0, 0, 0.7071068 ]]
+      - [[0.03, 0.4254, -0.317], [ -0.7071068, 0, 0, 0.7071068 ]]
+
+
+    graspable_points: ikea_stefan_assembled_jy_grasp.yaml
+    graspable_lines: ikea_stefan_without_bottom_cont_grasp.yaml
+
+# ikea_stefan_bolt_side:
+#     class_id: 6
+#     type: connector
+#     quantity: 1
+#     model_file: ikea_stefan_bolt_side.stl
+#     tf_visible: true
+#     assembly_points:
+#         # coordinates of tip
+#       - [[0, 0.0, 0.2], [ 0.0, 0, 0, 1.0]]
+
+# #    graspable_points: ikea_stefan_bottom_grasp.yaml
+#     graspable_lines: ikea_ikea_stefan_bolt_side_cont_grasp.yaml
+
+# chair_bracket:
+#   class_id: 1
+#   type: connector
+#   connector_id: 122620
+#   quantity: 4
+#   model_file: chair_braket(4ea).STEP
+# chair_part1:
+#   class_id: 2
+#   type: furniture_part
+#   quantity: 1
+#   model_file: chair_part1.STEP
+# chair_part2:
+#   class_id: 3
+#   type: furniture_part
+#   quantity: 1
+#   model_file: chair_part2.STEP
+# chair_part3:
+#   class_id: 4
+#   type: furniture_part
+#   quantity: 1
+#   model_file: chair_part3.STEP
+# chair_part4:
+#   class_id: 5
+#   type: furniture_part
+#   quantity: 1
+#   model_file: chair_part4.STEP
+# chair_part5:
+#   class_id: 6
+#   type: furniture_part
+#   quantity: 1
+#   model_file: chair_part5.STEP
+# chair_pin:
+#   class_id: 7
+#   type: connector
+#   connector_id: 101350
+#   quantity: 14
+#   model_file: chair_pin(14ea).STEP
+# countersunk_flat_head_cross_recess_screw_iso:
+#   class_id: 8
+#   type: connector
+#   connector_id: 104322
+#   quantity: 6
+#   model_file: countersunk_flat_head_cross_recess_screw_iso(6ea).STEP
+# pan_head_cross_recess_screw_iso:
+#   class_id: 9
+#   type: connector
+#   connector_id: 122925
+#   quantity: 4
+#   model_file: pan_head_cross_recess_screw_iso(4ea).STEP
+# symmetric_chair_part5:
+#   class_id: 10
+#   type: furniture_part
+#   quantity: 1
+#   model_file: 대칭_복사chair_part5.STEP
+
+

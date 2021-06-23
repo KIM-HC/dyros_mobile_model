@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dyros_mobile">
+  <xacro:include filename="./wheel.xacro" />
+
+  <xacro:unless value="${not connected_to}">
+    <joint name="dyros_mobile_joint_${connected_to}" type="fixed">
+      <parent link="${connected_to}"/>
+      <child link="dyros_mobile_base"/>
+      <origin rpy="${rpy}" xyz="${xyz}"/>
+    </joint>
+  </xacro:unless>
+
+  <link name="dyros_mobile_base">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/body_bottom.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/body_side.stl"/>
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://dyros_mobile_model/model/meshes/body_top.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.15" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.5 0.3 0.3" />
+      </geometry>
+    </collision>
+  </link>
+
+  <xacro:dyros_mobile_wheel robot_id="wheel1" connected_to="dyros_mobile_base" xyz=' 0.215 0.125  0.0'/>
+  <xacro:dyros_mobile_wheel robot_id="wheel2" connected_to="dyros_mobile_base" xyz='-0.215 0.125  0.0'/>
+  <xacro:dyros_mobile_wheel robot_id="wheel3" connected_to="dyros_mobile_base" xyz='-0.215 -0.125 0.0'/>
+  <xacro:dyros_mobile_wheel robot_id="wheel4" connected_to="dyros_mobile_base" xyz=' 0.215 -0.125 0.0'/>
+
+</robot>
