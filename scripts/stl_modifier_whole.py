@@ -57,85 +57,135 @@ class StlModifier(object):
             self.yaml_reader = self.yaml_reader['shapes']
 
 
-    def save_shape(self, mesh_list, name):
-        print("\nmaking:", name)
-        start_vertex = 0
-        wheel_list = ['336', '337', '347']
-        for idx in range(len(mesh_list)):
-            part_name = 'VIFS' + mesh_list[idx]
-            for ch in range(len(self.yaml_reader)):
-                if self.yaml_reader[ch]['name'] == part_name:
-                    print("adding:", part_name)
-                    start_vertex += len(self.yaml_reader[ch]['vertices']['index'])
-                    break
-        for idx in range(len(wheel_list)):
-            part_name = 'VIFS' + wheel_list[idx]
-            for ch in range(len(self.yaml_reader)):
-                if self.yaml_reader[ch]['name'] == part_name:
-                    print("adding:", part_name)
-                    start_vertex += len(self.yaml_reader[ch]['vertices']['index']) * 4
-                    break
-
-        start_vertex = int(start_vertex / 3)
-        print("total vertices:",start_vertex)
-
-        meshes = np.zeros(start_vertex, dtype=mesh.Mesh.dtype)
-        mesh_idx = 0
-        print('starting')
-        for iter in range(1):
+    def save_shape(self, mesh_list, name, is_wheel=False):
+        if is_wheel:
+            print("\nmaking:", name)
+            start_vertex = 0
+            wheel_list = ['336', '337', '347']
             for idx in range(len(mesh_list)):
                 part_name = 'VIFS' + mesh_list[idx]
                 for ch in range(len(self.yaml_reader)):
                     if self.yaml_reader[ch]['name'] == part_name:
-                        len_idx = int(len(self.yaml_reader[ch]['vertices']['index']) / 3)
-                        vdx = self.yaml_reader[ch]['vertices']['index']  ## vertices_index
-                        vpt = self.yaml_reader[ch]['vertices']['point']  ## vertices_point
-                        for i in range(len_idx):
-                            id0 = vdx[i*3 + 0]
-                            id1 = vdx[i*3 + 1]
-                            id2 = vdx[i*3 + 2]
-                            point = np.array([[vpt[id0*3+0], vpt[id0*3+1], vpt[id0*3+2], 1.0],
-                                              [vpt[id1*3+0], vpt[id1*3+1], vpt[id1*3+2], 1.0],
-                                              [vpt[id2*3+0], vpt[id2*3+1], vpt[id2*3+2], 1.0]])
-                            point = np.transpose(np.dot(self.T_bd, np.transpose(point)))
-                            meshes['vectors'][mesh_idx + i] = point[:, 0:3]
-                        mesh_idx += len_idx
+                        print("adding:", part_name)
+                        start_vertex += len(self.yaml_reader[ch]['vertices']['index'])
                         break
+            start_vertex = int(start_vertex / 3)
+            print("total vertices:",start_vertex)
 
-        for iter in range(4):
+            meshes = np.zeros(start_vertex, dtype=mesh.Mesh.dtype)
+            mesh_idx = 0
+
+            for iter in range(1):
+                for idx in range(len(wheel_list)):
+                    part_name = 'VIFS' + wheel_list[idx]
+                    for ch in range(len(self.yaml_reader)):
+                        if self.yaml_reader[ch]['name'] == part_name:
+                            len_idx = int(len(self.yaml_reader[ch]['vertices']['index']) / 3)
+                            vdx = self.yaml_reader[ch]['vertices']['index']  ## vertices_index
+                            vpt = self.yaml_reader[ch]['vertices']['point']  ## vertices_point
+                            for i in range(len_idx):
+                                id0 = vdx[i*3 + 0]
+                                id1 = vdx[i*3 + 1]
+                                id2 = vdx[i*3 + 2]
+                                point = np.array([[vpt[id0*3+0], vpt[id0*3+1], vpt[id0*3+2], 1.0],
+                                                [vpt[id1*3+0], vpt[id1*3+1], vpt[id1*3+2], 1.0],
+                                                [vpt[id2*3+0], vpt[id2*3+1], vpt[id2*3+2], 1.0]])
+                                if wheel_list[idx] == '337':
+                                    point = np.transpose(np.dot(self.T_w1, np.transpose(point)))
+                                else:
+                                    point = np.transpose(np.dot(self.T_c1, np.transpose(point)))
+                                if wheel_list[idx] == '337':
+                                    ttz = -0.052
+                                    ttx = -0.02
+                                    point[:, 0:3] += np.array([[ttx, 0.0, ttz], [ttx, 0.0, ttz], [ttx, 0.0, ttz]])
+                                meshes['vectors'][mesh_idx + i] = point[:, 0:3]
+                            mesh_idx += len_idx
+                            break
+                mesh_this = mesh.Mesh(meshes, remove_empty_areas=False)
+                mesh_this.normals
+
+            mesh_this.save('../data/modified_stl_files/'+str(name)+'.stl')
+
+        else:
+            print("\nmaking:", name)
+            start_vertex = 0
+            wheel_list = ['336', '337', '347']
+            for idx in range(len(mesh_list)):
+                part_name = 'VIFS' + mesh_list[idx]
+                for ch in range(len(self.yaml_reader)):
+                    if self.yaml_reader[ch]['name'] == part_name:
+                        print("adding:", part_name)
+                        start_vertex += len(self.yaml_reader[ch]['vertices']['index'])
+                        break
             for idx in range(len(wheel_list)):
                 part_name = 'VIFS' + wheel_list[idx]
                 for ch in range(len(self.yaml_reader)):
                     if self.yaml_reader[ch]['name'] == part_name:
-                        len_idx = int(len(self.yaml_reader[ch]['vertices']['index']) / 3)
-                        vdx = self.yaml_reader[ch]['vertices']['index']  ## vertices_index
-                        vpt = self.yaml_reader[ch]['vertices']['point']  ## vertices_point
-                        for i in range(len_idx):
-                            id0 = vdx[i*3 + 0]
-                            id1 = vdx[i*3 + 1]
-                            id2 = vdx[i*3 + 2]
-                            point = np.array([[vpt[id0*3+0], vpt[id0*3+1], vpt[id0*3+2], 1.0],
-                                              [vpt[id1*3+0], vpt[id1*3+1], vpt[id1*3+2], 1.0],
-                                              [vpt[id2*3+0], vpt[id2*3+1], vpt[id2*3+2], 1.0]])
-                            if wheel_list[idx] == '337':
-                                point = np.transpose(np.dot(self.T_w1, np.transpose(point)))
-                            else:
-                                point = np.transpose(np.dot(self.T_c1, np.transpose(point)))
-                            point[:, 0:3] += self.mv_wheel[iter]
-                            if wheel_list[idx] == '337':
-                                ttz = -0.052
-                                ttx = -0.02
-                                point[:, 0:3] += np.array([[ttx, 0.0, ttz], [ttx, 0.0, ttz], [ttx, 0.0, ttz]])
-                            meshes['vectors'][mesh_idx + i] = point[:, 0:3]
-                        mesh_idx += len_idx
+                        print("adding:", part_name)
+                        start_vertex += len(self.yaml_reader[ch]['vertices']['index']) * 4
                         break
-            mesh_this = mesh.Mesh(meshes, remove_empty_areas=False)
-            mesh_this.normals
 
-        mesh_this.save('../data/modified_stl_files/'+str(name)+'.stl')
+            start_vertex = int(start_vertex / 3)
+            print("total vertices:",start_vertex)
+
+            meshes = np.zeros(start_vertex, dtype=mesh.Mesh.dtype)
+            mesh_idx = 0
+            print('starting')
+            for iter in range(1):
+                for idx in range(len(mesh_list)):
+                    part_name = 'VIFS' + mesh_list[idx]
+                    for ch in range(len(self.yaml_reader)):
+                        if self.yaml_reader[ch]['name'] == part_name:
+                            len_idx = int(len(self.yaml_reader[ch]['vertices']['index']) / 3)
+                            vdx = self.yaml_reader[ch]['vertices']['index']  ## vertices_index
+                            vpt = self.yaml_reader[ch]['vertices']['point']  ## vertices_point
+                            for i in range(len_idx):
+                                id0 = vdx[i*3 + 0]
+                                id1 = vdx[i*3 + 1]
+                                id2 = vdx[i*3 + 2]
+                                point = np.array([[vpt[id0*3+0], vpt[id0*3+1], vpt[id0*3+2], 1.0],
+                                                [vpt[id1*3+0], vpt[id1*3+1], vpt[id1*3+2], 1.0],
+                                                [vpt[id2*3+0], vpt[id2*3+1], vpt[id2*3+2], 1.0]])
+                                point = np.transpose(np.dot(self.T_bd, np.transpose(point)))
+                                meshes['vectors'][mesh_idx + i] = point[:, 0:3]
+                            mesh_idx += len_idx
+                            break
+
+            for iter in range(4):
+                for idx in range(len(wheel_list)):
+                    part_name = 'VIFS' + wheel_list[idx]
+                    for ch in range(len(self.yaml_reader)):
+                        if self.yaml_reader[ch]['name'] == part_name:
+                            len_idx = int(len(self.yaml_reader[ch]['vertices']['index']) / 3)
+                            vdx = self.yaml_reader[ch]['vertices']['index']  ## vertices_index
+                            vpt = self.yaml_reader[ch]['vertices']['point']  ## vertices_point
+                            for i in range(len_idx):
+                                id0 = vdx[i*3 + 0]
+                                id1 = vdx[i*3 + 1]
+                                id2 = vdx[i*3 + 2]
+                                point = np.array([[vpt[id0*3+0], vpt[id0*3+1], vpt[id0*3+2], 1.0],
+                                                [vpt[id1*3+0], vpt[id1*3+1], vpt[id1*3+2], 1.0],
+                                                [vpt[id2*3+0], vpt[id2*3+1], vpt[id2*3+2], 1.0]])
+                                if wheel_list[idx] == '337':
+                                    point = np.transpose(np.dot(self.T_w1, np.transpose(point)))
+                                else:
+                                    point = np.transpose(np.dot(self.T_c1, np.transpose(point)))
+                                point[:, 0:3] += self.mv_wheel[iter]
+                                if wheel_list[idx] == '337':
+                                    ttz = -0.052
+                                    ttx = -0.02
+                                    point[:, 0:3] += np.array([[ttx, 0.0, ttz], [ttx, 0.0, ttz], [ttx, 0.0, ttz]])
+                                meshes['vectors'][mesh_idx + i] = point[:, 0:3]
+                            mesh_idx += len_idx
+                            break
+                mesh_this = mesh.Mesh(meshes, remove_empty_areas=False)
+                mesh_this.normals
+
+            mesh_this.save('../data/modified_stl_files/'+str(name)+'.stl')
 
     def execute(self):
         self.save_shape(self.whole_body, "whole_body")
+        self.save_shape(['336', '337', '347'], "whole_wheel",True)
 
 if __name__ == '__main__':
     maker = StlModifier()
