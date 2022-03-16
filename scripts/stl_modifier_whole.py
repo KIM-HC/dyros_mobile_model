@@ -12,9 +12,7 @@ import yaml
 
 class StlModifier(object):
     def __init__(self, file_name = '../data/aml_data/stl_info.yaml'):
-        self.body_side = ['011', '012', '013', '014', '015', '016', '017', '018', '019', '020', '021', '022', '023', '024', '032', '033']
-        self.body_bottom = ['177']
-        self.body_top = ['489']
+        self.whole_body = ['011', '012', '013', '014', '015', '016', '017', '018', '019', '020', '021', '022', '023', '024', '032', '033', '177', '489']
         T_bd_outer = np.array([[1.0, 0.0, 0.0, 0.0],
                                [0.0, 0.0, -1.0, 0.0],
                                [0.0, 1.0, 0.0, 0.0],
@@ -47,12 +45,11 @@ class StlModifier(object):
         dx = 0.215
         dy = 0.125
         self.move_wheel = np.array([[-dx, -dy, 0], [-dx, -dy, 0], [-dx, -dy, 0]])
-        zeros = np.array([[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]])
         w1 = np.array([[dx, dy, 0.0], [dx, dy, 0.0], [dx, dy, 0.0]])
         w2 = np.array([[-dx, dy, 0.0], [-dx, dy, 0.0], [-dx, dy, 0.0]])
         w3 = np.array([[-dx, -dy, 0.0], [-dx, -dy, 0.0], [-dx, -dy, 0.0]])
         w4 = np.array([[dx, -dy, 0.0], [dx, -dy, 0.0], [dx, -dy, 0.0]])
-        self.mv_wheel = [zeros, w1, w2, w3, w4]
+        self.mv_wheel = [w1, w2, w3, w4]
 
         print("reading",file_name, ".....")
         with open(file_name, 'r') as stream:
@@ -60,12 +57,10 @@ class StlModifier(object):
             self.yaml_reader = self.yaml_reader['shapes']
 
 
-    def save_shape(self, mesh_list, name, is_wheel=False):
+    def save_shape(self, mesh_list, name):
         print("\nmaking:", name)
-        num_do = 1
-        if is_wheel:
-            num_do = 1
         start_vertex = 0
+        wheel_list = ['336', '337', '347']
         for idx in range(len(mesh_list)):
             part_name = 'VIFS' + mesh_list[idx]
             for ch in range(len(self.yaml_reader)):
@@ -73,13 +68,21 @@ class StlModifier(object):
                     print("adding:", part_name)
                     start_vertex += len(self.yaml_reader[ch]['vertices']['index'])
                     break
+        for idx in range(len(wheel_list)):
+            part_name = 'VIFS' + wheel_list[idx]
+            for ch in range(len(self.yaml_reader)):
+                if self.yaml_reader[ch]['name'] == part_name:
+                    print("adding:", part_name)
+                    start_vertex += len(self.yaml_reader[ch]['vertices']['index']) * 4
+                    break
 
         start_vertex = int(start_vertex / 3)
         print("total vertices:",start_vertex)
 
-        for iter in range(num_do):
-            meshes = np.zeros(start_vertex, dtype=mesh.Mesh.dtype)
-            mesh_idx = 0
+        meshes = np.zeros(start_vertex, dtype=mesh.Mesh.dtype)
+        mesh_idx = 0
+        print('starting')
+        for iter in range(1):
             for idx in range(len(mesh_list)):
                 part_name = 'VIFS' + mesh_list[idx]
                 for ch in range(len(self.yaml_reader)):
@@ -94,39 +97,45 @@ class StlModifier(object):
                             point = np.array([[vpt[id0*3+0], vpt[id0*3+1], vpt[id0*3+2], 1.0],
                                               [vpt[id1*3+0], vpt[id1*3+1], vpt[id1*3+2], 1.0],
                                               [vpt[id2*3+0], vpt[id2*3+1], vpt[id2*3+2], 1.0]])
-                            if is_wheel:
-                                if mesh_list[idx] == '337':
-                                    point = np.transpose(np.dot(self.T_w1, np.transpose(point)))
-                                else:
-                                    point = np.transpose(np.dot(self.T_c1, np.transpose(point)))
-                                point[:, 0:3] += self.mv_wheel[iter]
-
-                            else:
-                                point = np.transpose(np.dot(self.T_bd, np.transpose(point)))
-
+                            point = np.transpose(np.dot(self.T_bd, np.transpose(point)))
                             meshes['vectors'][mesh_idx + i] = point[:, 0:3]
-
                         mesh_idx += len_idx
                         break
 
+        for iter in range(4):
+            for idx in range(len(wheel_list)):
+                part_name = 'VIFS' + wheel_list[idx]
+                for ch in range(len(self.yaml_reader)):
+                    if self.yaml_reader[ch]['name'] == part_name:
+                        len_idx = int(len(self.yaml_reader[ch]['vertices']['index']) / 3)
+                        vdx = self.yaml_reader[ch]['vertices']['index']  ## vertices_index
+                        vpt = self.yaml_reader[ch]['vertices']['point']  ## vertices_point
+                        for i in range(len_idx):
+                            id0 = vdx[i*3 + 0]
+                            id1 = vdx[i*3 + 1]
+                            id2 = vdx[i*3 + 2]
+                            point = np.array([[vpt[id0*3+0], vpt[id0*3+1], vpt[id0*3+2], 1.0],
+                                              [vpt[id1*3+0], vpt[id1*3+1], vpt[id1*3+2], 1.0],
+                                              [vpt[id2*3+0], vpt[id2*3+1], vpt[id2*3+2], 1.0]])
+                            if wheel_list[idx] == '337':
+                                point = np.transpose(np.dot(self.T_w1, np.transpose(point)))
+                            else:
+                                point = np.transpose(np.dot(self.T_c1, np.transpose(point)))
+                            point[:, 0:3] += self.mv_wheel[iter]
+                            if wheel_list[idx] == '337':
+                                ttz = -0.052
+                                ttx = -0.02
+                                point[:, 0:3] += np.array([[ttx, 0.0, ttz], [ttx, 0.0, ttz], [ttx, 0.0, ttz]])
+                            meshes['vectors'][mesh_idx + i] = point[:, 0:3]
+                        mesh_idx += len_idx
+                        break
             mesh_this = mesh.Mesh(meshes, remove_empty_areas=False)
             mesh_this.normals
-            if is_wheel:
-                if iter == 0:
-                    mesh_this.save('../data/modified_stl_files/base_wheel_'+str(name)+'.stl')
-                else:
-                    mesh_this.save('../data/modified_stl_files/wheel_'+str(iter)+'_'+str(name)+'.stl')
-            else:
-                mesh_this.save('../data/modified_stl_files/'+str(name)+'.stl')
+
+        mesh_this.save('../data/modified_stl_files/'+str(name)+'.stl')
 
     def execute(self):
-        self.save_shape(self.body_side, "body_side")
-        self.save_shape(self.body_bottom, "body_bottom")
-        self.save_shape(self.body_top, "body_top")
-
-        self.save_shape(['347', '336'], "body", True)
-        self.save_shape(['337'], "rotate", True)
-
+        self.save_shape(self.whole_body, "whole_body")
 
 if __name__ == '__main__':
     maker = StlModifier()
